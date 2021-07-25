@@ -1,0 +1,132 @@
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.button {
+  border-color: #000;
+  border-width: 2px;
+  color: #000;
+  font-weight: 700;
+}
+.button.is-hovered,
+.button:hover {
+  border-color: #000;
+  color: #fff;
+  background: #000;
+}
+
+nav {
+  box-shadow: 5px 5px 9px 0 rgb(46 61 73 / 10%);
+}
+.navbar-item img {
+  max-height: 2.75rem;
+}
+.navbar-item {
+  font-weight: 600;
+}
+
+.content {
+  font-weight: 500;
+}
+
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+  background-color: transparent;
+  color: #35c0ed;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #35c0ed;
+  margin-top: -0.375em;
+  right: 1.125em;
+}
+
+.has-text-primary {
+  color: #35c0ed !important;
+}
+
+.header-section {
+  min-height: 370px;
+}
+
+@media screen and (min-width: 769px) {
+  .header-section {
+    min-height: 600px;
+  }
+}
+.section.is-primary {
+  background: #e9fbf8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.service-box {
+  position: absolute;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 27px 19px rgb(229 235 238 / 46%);
+}
+.service-box.is-web-design {
+  right: 30%;
+  top: 0px;
+  background: #d9eefd;
+}
+.service-box.is-web-app {
+  right: 0px;
+  top: 0px;
+  background: #f1eedb;
+}
+.service-box.is-mobile-app {
+  right: 15%;
+  top: 70%;
+  background: #d9ecda;
+}
+
+.technology-box {
+  margin-top: -60px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 0 rgb(46 61 73 / 20%);
+}
+
+.technology-images {
+  margin-left: 0%;
+}
+
+@media screen and (min-width: 769px) {
+  .technology-images {
+    margin-left: 7%;
+  }
+}
+
+.service-card {
+  border: 2px solid #000000;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.image.is-64x64 {
+  border-radius: 50%;
+  background: #fdedbc;
+  padding: 15px;
+}
