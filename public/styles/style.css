@@ -132,6 +132,20 @@ a {
   background: #fdedbc;
   padding: 15px;
 }
+.image.is-64x64.is-1,
+.image.is-64x64.is-4 {
+  background: #d9eefd;
+}
+
+.image.is-64x64.is-2,
+.image.is-64x64.is-5 {
+  background: #f1eedb;
+}
+
+.image.is-64x64.is-3,
+.image.is-64x64.is-6 {
+  background: #d9ecda;
+}
 
 .highlight {
   background: #fdedbc;
