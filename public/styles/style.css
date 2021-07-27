@@ -130,3 +130,24 @@ h6 {
   background: #fdedbc;
   padding: 15px;
 }
+
+.highlight {
+  background: #fdedbc;
+}
+
+.big-number {
+  font-size: xxx-large;
+  font-weight: 700;
+}
+.big-number.is-1,
+.big-number.is-4 {
+  color: #b6cef9;
+}
+.big-number.is-2,
+.big-number.is-5 {
+  color: #fabef7;
+}
+.big-number.is-3,
+.big-number.is-6 {
+  color: #a4d78f;
+}
