@@ -9,6 +9,26 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Why us - Hexadigi Software PVT. LTD." />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+
     <meta
       name="description"
       content="Development and Consulting for Mobile Application and Web Application | Build CRM, Enterprise Applications,E-commerce,Ai enabled Applications"
@@ -46,20 +66,57 @@
         aria-label="main navigation"
       >
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://hexadigi.com" title="">
-            <img src="../assets/hexadigi-logo.png" />
+          <a
+            class="navbar-item"
+            href="https://hexadigi.com"
+            title="hexadigi logo"
+          >
+            <img src="../assets/hexadigi-logo.png" alt="hexadigi logo" />
           </a>
 
+          <a
+            role="button"
+            class="navbar-burger is-hidden-desktop"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+            onclick="openNav()"
+            id="humburger"
+          >
+            <img src="../assets/icons/menu.svg" alt="menu" />
+          </a>
           <a
             role="button"
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onclick="closeNav()"
+            style="display: none"
+            id="cross"
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <img src="../assets/icons/cross.svg" alt="menu close" />
+          </a>
+        </div>
+
+        <div
+          class="full-width-nav"
+          id="full-nav"
+          style="display: none"
+          data-aos="fade-down-left"
+        >
+          <a class="navbar-item" href="https://hexadigi.com/why-us"> Why Us </a>
+          <a class="navbar-item" href="https://hexadigi.com/industries">
+            Industries
+          </a>
+          <a class="navbar-item" href="https://hexadigi.com/about-us">
+            About Us</a
+          >
+          <!-- <a class="navbar-item" href="https://hexadigi.com/career">
+            Career
+          </a> -->
+          <a class="navbar-item" href="https://hexadigi-contact.web.app">
+            Contact us
           </a>
         </div>
 
@@ -74,10 +131,10 @@
             <a class="navbar-item" href="https://hexadigi.com/about-us">
               About Us</a
             >
-            <a class="navbar-item" href="https://hexadigi.com/career">
+            <!-- <a class="navbar-item" href="https://hexadigi.com/career">
               Career
-            </a>
-            <a class="navbar-item" href="https://hexadigi.com/contact-us">
+            </a> -->
+            <a class="navbar-item" href="https://hexadigi-contact.web.app">
               Contact us
             </a>
           </div>
@@ -321,22 +378,27 @@
               Flat No. B-408, Neelaya, Plot No. B, Sr No 393/B Tal-Maval,
               Talegaon Dabhade, Maharashtra 410507
             </h6>
-            <h6 class="is-size-5 has-text-weight-semibold">+91 7248 964 114</h6>
+            <a
+              class="is-size-5 has-text-weight-semibold"
+              href="tel:+919699900788"
+              >+91 9699 900 788</a
+            >
+
             <h6 class="is-size-5 has-text-weight-semibold">abc@gmail.com</h6>
             <div class="columns is-mobile mt-4">
               <div class="column is-2">
-                <a href="">
-                  <img src="../assets//icons/linkedin.svg" alt="" />
+                <a href="https://www.linkedin.com/company/hexadigi-software">
+                  <img src="../assets//icons/linkedin.svg" alt="linkedin" />
                 </a>
               </div>
               <div class="column is-2">
-                <a href="">
-                  <img src="../assets//icons/facebook.svg" alt="" />
+                <a href="https://www.facebook.com/hexadigisoft">
+                  <img src="../assets//icons/facebook.svg" alt="facebook" />
                 </a>
               </div>
               <div class="column is-2">
-                <a href="">
-                  <img src="../assets//icons/twitter.svg" alt="" />
+                <a href="https://twitter.com/hexadigi">
+                  <img src="../assets//icons/twitter.svg" alt="twitter" />
                 </a>
               </div>
             </div>
@@ -353,13 +415,10 @@
               <a class="navbar-item" href="https://hexadigi.com/about-us">
                 About Us</a
               >
-              <a class="navbar-item" href="https://career.hexadigi.com/career">
+              <!-- <a class="navbar-item" href="https://career.hexadigi.com/career">
                 Career
-              </a>
-              <a
-                class="navbar-item"
-                href="https://contact.hexadigi.com/contact-us"
-              >
+              </a> -->
+              <a class="navbar-item" href="https://hexadigi-contact.web.app">
                 Contact us
               </a>
             </div>
@@ -375,12 +434,6 @@
       </div>
     </div>
 
-    <script>
-      AOS.init({
-        duration: 1000,
-        easing: "ease",
-        once: true,
-      });
-    </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

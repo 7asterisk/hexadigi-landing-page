@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page - Hexadigi Software PVT. LTD.</title>
     <link rel="canonical" href="https://www.hexadigi.com" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
@@ -49,20 +69,53 @@
         aria-label="main navigation"
       >
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://hexadigi.com" title="">
+          <a class="navbar-item" href="https://hexadigi.com" title="Hexadigi">
             <img src="./assets/hexadigi-logo.png" />
           </a>
 
+          <a
+            role="button"
+            class="navbar-burger is-hidden-desktop"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+            onclick="openNav()"
+            id="humburger"
+          >
+            <img src="./assets/icons/menu.svg" alt="menu" />
+          </a>
           <a
             role="button"
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onclick="closeNav()"
+            style="display: none"
+            id="cross"
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <img src="./assets/icons/cross.svg" alt="menu-close" />
+          </a>
+        </div>
+
+        <div
+          class="full-width-nav"
+          id="full-nav"
+          style="display: none"
+          data-aos="fade-down-left"
+        >
+          <a class="navbar-item" href="https://hexadigi.com/why-us"> Why Us </a>
+          <a class="navbar-item" href="https://hexadigi.com/industries">
+            Industries
+          </a>
+          <a class="navbar-item" href="https://hexadigi.com/about-us">
+            About Us</a
+          >
+          <!-- <a class="navbar-item" href="https://hexadigi.com/career">
+            Career
+          </a> -->
+          <a class="navbar-item" href="https://hexadigi-contact.web.app">
+            Contact us
           </a>
         </div>
 
@@ -77,10 +130,10 @@
             <a class="navbar-item" href="https://hexadigi.com/about-us">
               About Us</a
             >
-            <a class="navbar-item" href="https://hexadigi.com/career">
+            <!-- <a class="navbar-item" href="https://hexadigi.com/career">
               Career
-            </a>
-            <a class="navbar-item" href="https://hexadigi.com/contact-us">
+            </a> -->
+            <a class="navbar-item" href="https://hexadigi-contact.web.app">
               Contact us
             </a>
           </div>
@@ -111,22 +164,32 @@
                 Our solutions can help you to enhance your business.
               </p>
               <br />
-              <button class="button is-medium" data-aos="zoom-in-up">
+              <a
+                href="https://hexadigi-contact.web.app"
+                class="button is-medium"
+                data-aos="zoom-in-up"
+              >
                 Schedule A Meeting
-              </button>
+              </a>
             </div>
             <div class="column is-6 is-hidden-mobile has-text-centered">
               <div class="service-box is-web-design" data-aos="fade-up">
-                <img src="./assets/icons/web-desing.svg" alt="" />
+                <img src="./assets/icons/web-desing.svg" alt="custom-design" />
                 <p class="has-text-weight-semibold">Custom Design</p>
               </div>
 
               <div class="service-box is-web-app" data-aos="fade-up">
-                <img src="./assets/icons/web-app.svg" alt="" />
+                <img
+                  src="./assets/icons/web-app.svg"
+                  alt="highly functional applictions"
+                />
                 <p class="has-text-weight-semibold">Highly Functional</p>
               </div>
               <div class="service-box is-mobile-app" data-aos="fade-up">
-                <img src="./assets/icons/mobile-app.svg" alt="" />
+                <img
+                  src="./assets/icons/mobile-app.svg"
+                  alt="cross platform applictions"
+                />
                 <p class="has-text-weight-semibold">Cross Platform</p>
               </div>
             </div>
@@ -142,7 +205,7 @@
               <div class="column is-2 is-offset-1">
                 <img
                   src="./assets/icons/js.svg"
-                  alt=""
+                  alt="javascript"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -152,7 +215,7 @@
               <div class="column is-2">
                 <img
                   src="./assets/icons/python.svg"
-                  alt=""
+                  alt="python"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -162,7 +225,7 @@
               <div class="column is-2">
                 <img
                   src="./assets/icons/flutter.svg"
-                  alt=""
+                  alt="flutter"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -172,7 +235,7 @@
               <div class="column is-2">
                 <img
                   src="./assets/icons/database.svg"
-                  alt=""
+                  alt="database"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -182,7 +245,7 @@
               <div class="column is-2">
                 <img
                   src="./assets/icons/cloud.svg"
-                  alt=""
+                  alt="cloud service"
                   data-aos="zoom-in"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -270,10 +333,7 @@
               <div class="media pr-4 mb-4" data-aos="fade-up">
                 <div class="media-left">
                   <figure class="image is-64x64 is-rounded">
-                    <img
-                      src="./assets/icons/rescue.svg"
-                      alt="Placeholder image"
-                    />
+                    <img src="./assets/icons/rescue.svg" alt="project rescue" />
                   </figure>
                 </div>
                 <div class="media-content">
@@ -291,10 +351,7 @@
               <div class="media pr-4 mb-4" data-aos="fade-up">
                 <div class="media-left">
                   <figure class="image is-64x64 is-rounded">
-                    <img
-                      src="./assets/icons/route.svg"
-                      alt="Placeholder image"
-                    />
+                    <img src="./assets/icons/route.svg" alt="IP Multiplier" />
                   </figure>
                 </div>
                 <div class="media-content">
@@ -312,7 +369,7 @@
                   <figure class="image is-64x64 is-rounded">
                     <img
                       src="./assets/icons/speedometor.svg"
-                      alt="Placeholder image"
+                      alt="Accelerate Time"
                     />
                   </figure>
                 </div>
@@ -333,7 +390,7 @@
                   <figure class="image is-64x64 is-rounded">
                     <img
                       src="./assets/icons/simple-shapes.svg"
-                      alt="Placeholder image"
+                      alt="Simplify Domain"
                     />
                   </figure>
                 </div>
@@ -353,10 +410,7 @@
               <div class="media pr-4 mb-4" data-aos="fade-up">
                 <div class="media-left">
                   <figure class="image is-64x64 is-rounded">
-                    <img
-                      src="./assets/icons/agile.svg"
-                      alt="Placeholder image"
-                    />
+                    <img src="./assets/icons/agile.svg" alt="Agile Process" />
                   </figure>
                 </div>
                 <div class="media-content">
@@ -374,7 +428,7 @@
                   <figure class="image is-64x64 is-rounded">
                     <img
                       src="./assets/icons/scaleble.svg"
-                      alt="Placeholder image"
+                      alt="Scalable Architecture"
                     />
                   </figure>
                 </div>
@@ -409,154 +463,89 @@
               </p>
             </div>
             <div class="column is-3 has-text-centered">
-              <button class="button is-medium" data-aos="zoom-in-up">
+              <a
+                href="https://hexadigi-contact.web.app"
+                class="button is-medium"
+                data-aos="zoom-in-up"
+              >
                 Let's Talk ->
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
+    </main>
+    <!-- footer  -->
+    <footer class="section is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <img src="./assets/hexadigi-logo.png" alt="hexadigi logo" />
+            <h5 class="is-size-5 has-text-weight-semibold">
+              Hexadigi software PVT. LTD.
+            </h5>
+            <h6 class="is-size-6">
+              Flat No. B-408, Neelaya, Plot No. B, Sr No 393/B Tal-Maval,
+              Talegaon Dabhade, Maharashtra 410507
+            </h6>
+            <a
+              class="is-size-5 has-text-weight-semibold"
+              href="tel:+919699900788"
+              >+91 9699 900 788</a
+            >
 
-      <!-- footer  -->
-      <footer class="section is-primary">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-3">
-              <img src="./assets/hexadigi-logo.png" alt="hexadigi-logo" />
-              <h5 class="is-size-5 has-text-weight-semibold">
-                Hexadigi software PVT. LTD.
-              </h5>
-              <h6 class="is-size-6">
-                Flat No. B-408, Neelaya, Plot No. B, Sr No 393/B Tal-Maval,
-                Talegaon Dabhade, Maharashtra 410507
-              </h6>
-              <h6 class="is-size-5 has-text-weight-semibold">
-                +91 7248 964 114
-              </h6>
-              <h6 class="is-size-5 has-text-weight-semibold">abc@gmail.com</h6>
-              <div class="columns is-mobile mt-4">
-                <div class="column is-2">
-                  <a href="">
-                    <img src="./assets//icons/linkedin.svg" alt="" />
-                  </a>
-                </div>
-                <div class="column is-2">
-                  <a href="">
-                    <img src="./assets//icons/facebook.svg" alt="" />
-                  </a>
-                </div>
-                <div class="column is-2">
-                  <a href="">
-                    <img src="./assets//icons/twitter.svg" alt="" />
-                  </a>
-                </div>
+            <h6 class="is-size-5 has-text-weight-semibold">abc@gmail.com</h6>
+            <div class="columns is-mobile mt-4">
+              <div class="column is-2">
+                <a href="https://www.linkedin.com/company/hexadigi-software">
+                  <img src="./assets/icons/linkedin.svg" alt="linkedin url" />
+                </a>
               </div>
-            </div>
-            <div class="column is-4"></div>
-            <div class="column is-3 is-offset-2">
-              <div class="is-block">
-                <a class="navbar-item" href="https://hexadigi.com/why-us">
-                  Why Us
+              <div class="column is-2">
+                <a href="https://www.facebook.com/hexadigisoft">
+                  <img src="./assets/icons/facebook.svg" alt="facebook url" />
                 </a>
-                <a class="navbar-item" href="https://hexadigi.com/industries">
-                  Industries
-                </a>
-                <a class="navbar-item" href="https://hexadigi.com/about-us">
-                  About Us</a
-                >
-                <a
-                  class="navbar-item"
-                  href="https://career.hexadigi.com/career"
-                >
-                  Career
-                </a>
-                <a
-                  class="navbar-item"
-                  href="https://contact.hexadigi.com/contact-us"
-                >
-                  Contact us
+              </div>
+              <div class="column is-2">
+                <a href="https://twitter.com/hexadigi">
+                  <img src="./assets/icons/twitter.svg" alt="twitter url" />
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-      <div class="section is-small">
-        <div class="container">
-          <p class="has-text-weight-bold is-size-6 has-text-centered">
-            Copyright ©2021 Hexadigi software PVT. LTD. All Rights Reserved.
-          </p>
+          <div class="column is-4"></div>
+          <div class="column is-3 is-offset-2">
+            <div class="is-block">
+              <a class="navbar-item" href="https://hexadigi.com/why-us">
+                Why Us
+              </a>
+              <a class="navbar-item" href="https://hexadigi.com/industries">
+                Industries
+              </a>
+              <a class="navbar-item" href="https://hexadigi.com/about-us">
+                About Us</a
+              >
+              <!-- <a
+                  class="navbar-item"
+                  href="https://career.hexadigi.com/career"
+                >
+                  Career
+                </a> -->
+              <a class="navbar-item" href="https://hexadigi-contact.web.app">
+                Contact us
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-
-    <script>
-      AOS.init({
-        duration: 1000,
-        easing: "ease",
-        once: true,
-      });
-
-      var TxtType = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = "";
-        this.tick();
-        this.isDeleting = false;
-      };
-
-      TxtType.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML =
-          '<span class="has-text-primary">' + this.txt + "</span>";
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) {
-          delta /= 2;
-        }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === "") {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-        }
-
-        setTimeout(function () {
-          that.tick();
-        }, delta);
-      };
-
-      window.onload = function () {
-        var elements = document.getElementsByClassName("typewrite");
-        for (var i = 0; i < elements.length; i++) {
-          var toRotate = elements[i].getAttribute("data-type");
-          var period = elements[i].getAttribute("data-period");
-          if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-          }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML =
-          ".typewrite > .has-text-primary { border-right: 0.08em solid #000}";
-        document.body.appendChild(css);
-      };
-    </script>
+    </footer>
+    <div class="section is-small">
+      <div class="container">
+        <p class="has-text-weight-bold is-size-6 has-text-centered">
+          Copyright ©2021 Hexadigi software PVT. LTD. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
