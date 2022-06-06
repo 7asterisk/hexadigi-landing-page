@@ -196,3 +196,27 @@ a {
   font-weight: 700;
   margin-top: 30px;
 }
+
+.input,
+.textarea {
+  box-shadow: none;
+}
+.input:active,
+.input:focus,
+.is-active.input,
+.is-active.textarea,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+.button.is-dark {
+  background-color: #000;
+ }
