@@ -225,3 +225,8 @@ a {
 .button.is-dark {
   background-color: #000;
 }
+
+.navbar-item,
+.navbar-link {
+  color: #000;
+}
