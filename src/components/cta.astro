@@ -1,0 +1,49 @@
+---
+import Icon from "astro-icon";
+import Link from "./ui/link.astro";
+import Container from "./container.astro";
+const { default: logoWt } = await import(`assets/hexadigi-light.svg?raw`);
+---
+
+<div class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto">
+  <Container class="grid md:grid-cols-3 gap-10">
+    <div class="flex flex-col col-span-2">
+      <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+        Transform your ideas into reality.
+      </h2>
+      <p class="text-slate-400 mt-4 text-lg md:text-xl">
+        Feel free to reach out if you want to collaborate with us, or simply
+        have a chat.
+      </p>
+      <div class="flex mt-5">
+        <Link
+          href="#"
+          style="inverted"
+          class="flex gap-1 items-center justify-center">
+          Let's Talk <Icon class="w-5 h-5" name="bx:bx-right-arrow-alt" />
+        </Link>
+      </div>
+    </div>
+    <div>
+      <div class="w-48">
+        <a href="/">
+          <Fragment set:html={logoWt} />
+        </a>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+            <span>pune Maharashtra 410507</span>
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
+              href="mailto:contact@hexadigi.com">contact@hexadigi.com</a
+            >
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
+              href="tel:+91 9699 900 788">+91 9699 900 788</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>

@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /styles/
-Disallow: /assets/
-Allow: /assets/hexadigi-wbg.png
+Allow: /
+
+Sitemap: http://astroship.web3templates.com/sitemap-index.xml
