@@ -1,13 +1,12 @@
 ---
-draft: false
-title: "The Complete Guide to Full Stack Web Development"
-snippet: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
+title: "Froot Research"
+description: "A visionary collaboration with Froot Research, driven by the core values of creativity and innovation. In crafting their minimalist design company portfolio, we've seamlessly woven the power of AI and ML. Our creation is more than a portfolio; it's a canvas of surprises, where every element has been meticulously designed to amaze. With Froot Research's dedication to pushing boundaries, our infusion of AI and ML technologies has given birth to a digital masterpiece that reflects the essence of minimalism while evoking a sense of wonder. This portfolio isn't just a showcase; it's an experience – a harmonious blend of cutting-edge technology and artistic finesse that captures the imagination and leaves a lasting impression."
 image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
-    alt: "full stack web development"
+    src: "froot-research.png",
+    alt: "Froot Research"
 }
 publishDate: "2022-11-08 11:39"
-category: "Tutorials"
+category: "AI/ML"
 author: "Janette Lynch"
 tags: [webdev, tailwindcss, frontend]
 ---
