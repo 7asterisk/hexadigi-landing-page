@@ -6,7 +6,7 @@ const { plan, img } = Astro.props;
   <div
     class="flex flex-col w-full order-first lg:order-none border-2 border-black service-card py-5 px-6 rounded-md">
     <div class="text-center">
-      <h4 class="font-medium font-bold text-black text-2xl">{plan.name}</h4>
+      <h3 class="font-medium font-bold text-black text-2xl">{plan.name}</h3>
       <div class="service-image">
         <Fragment set:html={img} />
       </div>
