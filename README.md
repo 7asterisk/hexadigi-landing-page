@@ -5,6 +5,7 @@ Hexadigi is build on top of Astroship, a starter template for startups, marketin
 This Free Template is sponsored by [Web3Templates](https://web3templates.com)
 
 ## Live Demo
+### [https://hexadigi-8b87d.web.app/](https://hexadigi-8b87d.web.app/)
 
 ### [https://astroship.web3templates.com/](https://astroship.web3templates.com/)
 
@@ -23,6 +24,7 @@ Click here to deploy on Netlify:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/astroship)
 
 ## Preview
+![image](https://github.com/user-attachments/assets/b53407dd-b52d-40f4-adf1-af92a40a7c25)
 
 ![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
 
