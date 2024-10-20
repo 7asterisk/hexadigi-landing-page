@@ -1,0 +1,31 @@
+---
+const { plan, img } = Astro.props;
+---
+
+<div>
+  <div
+    class="flex flex-col w-full order-first lg:order-none border-2 border-black service-card py-5 px-6 rounded-md">
+    <div class="text-center">
+      <h3 class="font-medium font-bold text-black text-2xl">{plan.name}</h3>
+      <div class="service-image">
+        <Fragment set:html={img} />
+      </div>
+      <!-- {
+        plan.price.original && (
+          <p class="mt-1 text-xl font-medium text-gray-400 line-through md:text-2xl">
+            {plan.price.original}
+          </p>
+        )
+      } -->
+    </div>
+    <p class="text-justify">
+      {plan.features}
+    </p>
+  </div>
+</div>
+
+<style>
+  .service-card {
+    box-shadow: 4px 4px 0 #000;
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+const { default: innerHTML } = await import(`assets/about-us.svg?raw`);
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">About us</Fragment>
+      <Fragment slot="desc">
+        Our expertise extends to technical branding and product development,
+        empowering your business for success.
+      </Fragment>
+    </Sectionhead>
+
+    <div
+      class="grid lg:grid-cols-2 place-items-center pt-20 pb-10 md:pt-12 md:pb-20">
+      <div class="md:py-15 md:order-1">
+        <Fragment set:html={innerHTML} />
+      </div>
+      <div class="flex flex-col gap-3 mx-auto mt-16">
+        <p class="text-lg leading-relaxed text-slate-500">
+          We are a Software company providing IT Services and solutions. At
+          Hexadigi we use latest technology to transform your business. We work
+          together to design and create work that we are proud of for folks that
+          we believe in. 100% client satisfaction is our ultimate goal .We have
+          highly experienced professionals who are developing small
+          enterprise-level applications with the latest technologies available
+          in the market. We have our presence in every possible service that can
+          promote your online business strategy. We offer web designing and
+          development, web hosting, Mobile application development, Internet
+          Marketing, IT Service and Solutions.
+        </p>
+      </div>
+    </div>
+  </Container>
+</Layout>

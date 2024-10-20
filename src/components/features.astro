@@ -1,0 +1,54 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+import Container from "./container.astro";
+
+const features = [
+  {
+    title: "Product design",
+    description:
+      "Are you at the idea stage? We will help you identify the critical MVP product scope.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Website Design",
+    description:
+      "Establish your online presence with a professional custom website.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Custom Development",
+    description:
+      "Enjoy the benefit of full-cycle custom development services.  ",
+    icon: "bx:bxs-data",
+  },
+];
+---
+
+<div class="bg-black py-10">
+  <Container>
+    <div class="mt-20 md:mt-0">
+      <h2 class="text-white text-4xl lg:text-5xl font-bold lg:tracking-tight">
+        Our Solution to Your business.
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+      {
+        features.map((item) => (
+          <div class="flex gap-4 items-start">
+            <div class="mt-1 bg-slate-50 rounded-full  p-2 w-8 h-8 shrink-0">
+              <Icon class="text-black" name={item.icon} />
+            </div>
+            <div>
+              <h3 class="text-white font-semibold text-lg">{item.title}</h3>{" "}
+              <p class="text-slate-300 mt-2 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</div>

@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Contactform from "@components/contactform.astro";
+const { default: innerHTML } = await import(`assets/mailbox.svg?raw`);
+---
+
+<Layout title="Contact Us">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Contact Hexadigi</Fragment>
+      <Fragment slot="desc">
+        Feel free to reach out if you want to collaborate with us, or simply
+        have a chat.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-40 mx-auto max-w-5xl mt-20">
+      <div>
+        <Fragment set:html={innerHTML} />
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

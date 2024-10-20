@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /styles/
-Disallow: /assets/
-Allow: /assets/hexadigi-wbg.png
+Allow: /
+
+Sitemap: https://hexadigi.com/sitemap-index.xml

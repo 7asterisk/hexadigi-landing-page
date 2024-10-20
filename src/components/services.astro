@@ -1,0 +1,43 @@
+---
+import Container from "@components/container.astro";
+import ServiceCard from "@components/servicecard.astro";
+const { default: mobileDevImg } = await import(
+  `assets/mobile-devlopment.svg?raw`
+);
+const { default: webDevelopment } = await import(
+  `assets/web-devlopment.svg?raw`
+);
+const { default: webDesign } = await import(`assets/web-design.svg?raw`);
+
+const services = [
+  {
+    name: "UI/UX Designs",
+    features:
+      "Hexadigi are team of   experienced professionals in Designs. We do all design works like website, mobile app, desktop applications. We have development team to provide dev solutions.",
+    img: webDesign,
+  },
+  {
+    name: "Web Development",
+    features:
+      "Hexadigi ensure that all our web development projects are using the most   cutting-edge technologies to meet all the necessary security and user friendly experiences .",
+    img: webDevelopment,
+  },
+  {
+    name: "Mobile Devlopment",
+    features:
+      "Hexadigi create   seamless and intuitive mobile applications that provide the best user experience, our team are experts in developing iOS, Android applications. based on your business needs.",
+    img: mobileDevImg,
+  },
+];
+---
+
+<Container>
+  <div class="mt-12 ">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      Few of our expertise
+    </h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-10 mx-auto mt-12 mb-20">
+    {services.map((item) => <ServiceCard plan={item} img={item.img} />)}
+  </div>
+</Container>
